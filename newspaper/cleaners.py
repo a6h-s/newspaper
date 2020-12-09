@@ -227,7 +227,7 @@ class DocumentCleaner(object):
         for div in divs:
             items = self.parser.getElementsByTags(div, tags)
             if div is not None and len(items) == 0:
-                self.replace_with_para(doc, div)
+                # self.replace_with_para(doc, div)
                 bad_divs += 1
             elif div is not None:
                 replace_nodes = self.get_replacement_nodes(doc, div)
